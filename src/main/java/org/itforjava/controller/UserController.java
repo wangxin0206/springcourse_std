@@ -35,7 +35,7 @@ public class UserController {
     }
 
     /*
-     * 注册
+     * 登录
      * */
     @PostMapping("/login")
     public Result login(@Pattern(regexp = "^\\S{5,16}$") String username,@Pattern(regexp = "^\\S{5,16}$") String password) {
