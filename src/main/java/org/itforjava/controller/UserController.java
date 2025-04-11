@@ -43,6 +43,7 @@ public class UserController {
         if (user == null) {
 //            String md5String = Md5Util.getMD5String(password);
             userService.add(username,password);
+            userService.add(username,password);
             return Result.success("登录成功");
         }else{
             return Result.error("登录失败");
